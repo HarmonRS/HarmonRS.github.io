@@ -20,31 +20,38 @@
         .rightitem {
             flex: 1;
         }
-
+        .scroll-button {
+            width: 1600px;
+            height: 100px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
     </style>
+
 </head>
 <body>
 <div class="wrapper">
     <div class="leftitem">
-
     </div>
     <div class="centeritem">
-        <iframe
-                src="https://qing9dc001f03c19.maps.arcgis.com/apps/instant/basic/index.html?appid=593d219df8b34005b266f211282df703"
-                width="1600" height="1200"
-                frameborder="0" style="border:0" allowfullscreen>
-            此页面不支持 iFrame
-        </iframe>
+        <button class="scroll-button" onclick="scrollToPage()">黑龙江省市级行政区</button>
+
     </div>
     <div class="rightitem">
-        <p>
-            制作人
-        </p>
-        <ul>
-            <li>Harmon</li>
-        </ul>
     </div>
 </div>
+
+<script>
+    function scrollToPage() {
+        window.location.href = 'PadgeProvince.html'; // 这里替换为你要跳转的新页面的URL
+    }
+</script>
 </body>
 </html>
 </html>
